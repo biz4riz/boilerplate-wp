@@ -5,6 +5,6 @@
 
 $(document).ready(function() {
 	
-	navMenu();
+	//FUNCTION_NAME();
 	
 });
