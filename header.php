@@ -1,23 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title><?php bloginfo('name'); ?><?php wp_title('|'); ?></title>
 
-<meta charset="utf-8" />
-
-<meta name="description" content="" />
-<meta name="keywords" content="">
-<meta name="author" content="">
-
+<meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>favicon.ico">
-
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-
 <?php wp_head(); ?>
 
+<script src="https://use.typekit.net/sqd7hdy.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+<script src="https://use.fontawesome.com/68a48c13a2.js"></script>
 </head>
 
 <?php 
@@ -33,7 +26,7 @@ $slug = $post->post_name;
 		<div class="wrap">
 			<div class="sm_12">
 			
-				<a class="logo" href="<?php bloginfo('url'); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="<?php bloginfo('name'); ?>" /></a>
+				<?php the_custom_logo(); ?>
 				
 				<a href="#menu" id="nav_btn">
 					<div id="nav_icon">
@@ -58,7 +51,6 @@ $slug = $post->post_name;
 						'walker'          => ''
 						)
 					); ?>
-	
 				</nav>
 				
 			</div>
