@@ -8,9 +8,6 @@
 
 <?php wp_head(); ?>
 
-<script src="https://use.typekit.net/sqd7hdy.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
-<script src="https://use.fontawesome.com/68a48c13a2.js"></script>
 </head>
 
 <?php 
