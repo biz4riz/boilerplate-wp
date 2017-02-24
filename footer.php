@@ -5,15 +5,12 @@
 				<?php wp_nav_menu(
 				array(
 					'theme_location'  => 'footer-menu',
-					'container_class' => '',
 					'container_id'    => 'footer-menu',
 					'menu_class'      => 'menu',
-					'menu_id'         => '',
 					'echo'            => true,
 					'fallback_cb'     => 'wp_page_menu',
 					'items_wrap'      => '<ul>%3$s</ul>',
 					'depth'           => 0,
-					'walker'          => ''
 					)
 				); ?>
 			</nav>
