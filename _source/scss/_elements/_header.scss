@@ -1,0 +1,14 @@
+/************************************************************************/
+/* HEADER STYLES
+/************************************************************************/
+
+header[role="banner"] {
+	@include clearfix;
+	background: $grey;
+	padding: 2rem 0;
+	
+	.logo {
+		float: left;
+		display: block;
+	}
+}

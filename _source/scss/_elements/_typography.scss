@@ -1,0 +1,122 @@
+/************************************************************************/
+/* TYPOGRAPHY
+/************************************************************************/
+
+a {
+	color: $link_color;
+	text-decoration: none;
+	@include single-transition(all, 0.2s, ease-in-out);
+	
+	&:visited {
+		color: $link_color;
+	}
+	
+	&:hover {
+		text-decoration: none;
+		color: $link_hover;
+	}
+	
+	&:hover, &:active, &:focus {
+		outline: 0;
+	}
+}
+
+p {
+	font-size: $base_font_size;
+	line-height: $base_line_height;
+	margin-bottom: 1.5rem;
+}
+
+//------------------------------------------------------------------------
+// HEADINGS
+//------------------------------------------------------------------------
+
+#{headings()} {
+	color: $heading_color;
+	font-family: $heading_font;
+	font-weight: 500;
+	text-rendering: optimizelegibility;
+	line-height: $base_line_height;
+	margin-bottom: 1rem;
+}
+
+h1 {
+	font-size: 3.2rem;
+}
+
+h2 {
+	font-size: 2.4rem;
+}
+
+h3 {
+	font-size: 2.0rem;
+}
+
+h4 {
+	font-size: 1.8rem;
+}
+
+h5 {
+	font-size: 1.6rem;
+}
+
+h6 {
+	font-size: 1.4rem;
+}
+
+//------------------------------------------------------------------------
+// BASIC TYPOGRAPHY ELEMENTS
+//------------------------------------------------------------------------
+
+blockquote {
+	@extend p;
+	border-left: 2px solid $grey;
+	padding-left: 1.8rem;
+	font-style: italic;
+	color: $grey;
+}
+
+ul, ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+article {
+	
+	ul, ol {
+	    font-size: 1.6rem;
+	    padding-left: 1.8rem;
+	    margin-bottom: 1.5rem;
+		
+	    li {
+			line-height: 1.8rem;
+			margin-bottom: 0.5rem;
+	    }
+	    
+		ul, ol {
+			margin-bottom: 0;
+		}
+  	}
+  	
+	ul { list-style-type: disc; }
+	ol { list-style-type: decimal; }
+}
+
+sup {
+	font-size: 0.9rem;
+	position: relative;
+	top: -0.75rem;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+i, em{
+	font-style: italic;
+}
+
+small, .small{
+	font-size: 75%;
+}
