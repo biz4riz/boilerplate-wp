@@ -396,7 +396,7 @@ header[role="banner"]:before, header[role="banner"]:after {
 header[role="banner"]:after {
   clear: both;
 }
-header[role="banner"] .logo {
+header[role="banner"] .custom-logo-link {
   float: left;
   display: block;
 }
