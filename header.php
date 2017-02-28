@@ -16,15 +16,14 @@ $post_id = $wp_query->post->ID;
 $post = get_post( $post_id );
 $slug = $post->post_name;
 ?>
-<body id="<?php echo $slug; ?>" <?php body_class(); ?>>
+<body <?php body_class(); ?>>
 
-<div id="<?php if ($template_name) { echo 'template_' . $template; } ; ?>" class="container">
+<div class="container">
+	
 	<header role="banner">
 		<div class="wrap">
 			<div class="sm_12">
-			
 				<?php the_custom_logo(); ?>
-				
 				<nav id="main_menu" role="navigation">
 				<?php 
 					wp_nav_menu(
@@ -35,7 +34,6 @@ $slug = $post->post_name;
 					);
 				?>
 				</nav>
-				
 			</div>
 		</div>
 	</header>
