@@ -1,19 +1,16 @@
 
 	<footer role="contentinfo">
 		<div class="wrap">
-			<nav id="footer-menu" role="navigation">
-				<?php wp_nav_menu(
-				array(
-					'theme_location'  => 'footer-menu',
-					'container_id'    => 'footer-menu',
-					'menu_class'      => 'menu',
-					'echo'            => true,
-					'fallback_cb'     => 'wp_page_menu',
-					'items_wrap'      => '<ul>%3$s</ul>',
-					'depth'           => 0,
-					)
-				); ?>
-			</nav>
+				<nav id="footer_menu" role="navigation">
+					<?php 
+						wp_nav_menu(
+							array(
+								'theme_location' => 'footer',
+								'container_class' => 'menu',
+							)
+						);
+					?>
+				</nav>
 			<small class="footer-content">&copy; <?php echo date("Y"); ?> <?php bloginfo('name'); ?></small>
 		</div>
 	</footer>

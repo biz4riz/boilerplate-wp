@@ -25,29 +25,15 @@ $slug = $post->post_name;
 			
 				<?php the_custom_logo(); ?>
 				
-				<a href="#menu" id="nav_btn">
-					<div id="nav_icon">
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-					Menu
-				</a>
-				<nav id="menu" role="navigation">
-					<?php wp_nav_menu(
-					array(
-						'theme_location'  => 'main-menu',
-						'container_class' => '',
-						'container_id'    => 'main_menu',
-						'menu_class'      => '',
-						'menu_id'         => '',
-						'echo'            => true,
-						'fallback_cb'     => 'wp_page_menu',
-						'items_wrap'      => '<ul>%3$s</ul>',
-						'depth'           => 0,
-						'walker'          => ''
-						)
-					); ?>
+				<nav id="main_menu" role="navigation">
+					<?php 
+						wp_nav_menu(
+							array(
+								'theme_location' => 'main',
+								'container_class' => 'menu',
+							)
+						);
+					?>
 				</nav>
 				
 			</div>
