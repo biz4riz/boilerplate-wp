@@ -26,14 +26,14 @@ $slug = $post->post_name;
 				<?php the_custom_logo(); ?>
 				
 				<nav id="main_menu" role="navigation">
-					<?php 
-						wp_nav_menu(
-							array(
-								'theme_location' => 'main',
-								'container_class' => 'menu',
-							)
-						);
-					?>
+				<?php 
+					wp_nav_menu(
+						array(
+							'theme_location' => 'main',
+							'container_class' => 'menu',
+						)
+					);
+				?>
 				</nav>
 				
 			</div>
