@@ -11,22 +11,5 @@
 
 			<?php endif; ?>
 			
-			<form>
-				<p>
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</p>
-				<p>
-					<label for="Email">Email</label>
-					<input type="text" name="email" id="email" />
-				</p>
-				<p>
-					<label for="comments">Comments</label>
-					<textarea></textarea>
-				</p>
-				<p>
-					<input type="submit" value="Submit" class="btn" />
-				</p>
-			</form>
 		</aside>
 		
