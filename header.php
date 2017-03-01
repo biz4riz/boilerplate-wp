@@ -18,7 +18,7 @@ $slug = $post->post_name;
 ?>
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div <?php echo $slug == 'home' ? '' : 'id="'.$slug.'"'; ?> class="container">
 	
 	<header role="banner">
 		<div class="wrap">
