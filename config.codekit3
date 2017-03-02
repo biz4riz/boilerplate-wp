@@ -7,8 +7,14 @@
 		"uuidString": "1066FB26-C9E5-44CE-85AA-DE335F9606A5"
 		}
 	],
-"creatorBuild": "25504",
+"creatorBuild": "25568",
 "files": {
+	"\/404.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/404.php",
+		"oF": 0
+		},
 	"\/_source\/js\/_functions.js": {
 		"ft": 64,
 		"mi": 1,
@@ -361,6 +367,12 @@
 		"oS": 1,
 		"uL": 1
 		},
+	"\/archive.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive.php",
+		"oF": 0
+		},
 	"\/assets\/css\/layout.css": {
 		"aP": 0,
 		"bl": 0,
@@ -406,47 +418,89 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/comments.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/comments.php",
+		"oF": 0
+		},
 	"\/config.rb": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
 		},
-	"\/favicon.ico": {
+	"\/footer.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/favicon.ico",
+		"oAP": "\/footer.php",
 		"oF": 0
 		},
-	"\/index.html": {
+	"\/front-page.php": {
 		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/front-page.php",
+		"oF": 0
+		},
+	"\/functions.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/functions.php",
+		"oF": 0
+		},
+	"\/header.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/header.php",
+		"oF": 0
+		},
+	"\/index.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.php",
+		"oF": 0
+		},
+	"\/page-TEMPLATE_NAME.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page-TEMPLATE_NAME.php",
+		"oF": 0
+		},
+	"\/page.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/page.php",
+		"oF": 0
+		},
+	"\/screenshot.png": {
+		"ft": 32768,
+		"iS": 1538524,
 		"oA": 0,
-		"oAP": "\/index.html",
-		"oF": 0
+		"oAP": "\/screenshot.png",
+		"oF": 0,
+		"opt": 0
 		},
-	"\/README.md": {
-		"cS": 0,
-		"eF": 1,
-		"eL": 1,
-		"eLB": 0,
-		"ema": 1,
-		"eSQ": 1,
-		"ft": 4096,
-		"oA": 1,
-		"oAP": "\/README.html",
-		"oF": 1,
-		"oFM": 0,
-		"oS": 0,
-		"pHT": 0,
-		"pME": 1,
-		"rFN": 0,
-		"uCM": 0
-		},
-	"\/styles.html": {
+	"\/sidebar.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/styles.html",
+		"oAP": "\/sidebar.php",
 		"oF": 0
+		},
+	"\/single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/single.php",
+		"oF": 0
+		},
+	"\/style.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/style-min.css",
+		"oF": 0,
+		"oS": 0
 		}
 	},
 "hooks": [
@@ -1329,6 +1383,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -1657,6 +1715,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
+			},
 		"prefer-rest-params": {
 			"active": 0,
 			"optionString": ""
@@ -1750,6 +1812,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
