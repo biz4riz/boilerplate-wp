@@ -112,7 +112,7 @@ add_action( 'after_setup_theme', 'theme_setup' );
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 add_action( 'wp_enqueue_scripts', 'theme_typekit' );
 add_action( 'wp_head', 'theme_typekit_const' );
-add_filter('tiny_mce_before_init', 'color_options');
+add_filter( 'tiny_mce_before_init', 'color_options' );
 add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
-add_filter('the_generator', 'remove_gen_version');
+add_filter( 'the_generator', 'remove_gen_version' );
 
