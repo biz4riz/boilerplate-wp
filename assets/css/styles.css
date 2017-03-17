@@ -17,23 +17,23 @@ html {
 
 body {
   background: white;
-  color: #141414;
-  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 400;
   line-height: 1.2;
 }
 
-img {
+img,
+picture {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
-  -ms-interpolation-mode: bicubic;
 }
 
 .btn-static, input[type="submit"], .btn, .btn:hover, .btn-alt, .btn-alt:hover, .btn-outline, .btn-outline:hover {
   border-width: 2px;
   border-style: solid;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1;
@@ -97,21 +97,21 @@ a:visited {
 }
 a:hover {
   text-decoration: none;
-  color: #00b5bd;
+  color: #007e84;
 }
 a:hover, a:active, a:focus {
   outline: 0;
 }
 
 p, blockquote {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.2;
   margin-bottom: 1.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: #141414;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-weight: 500;
   text-rendering: optimizelegibility;
   line-height: 1.2;
@@ -196,33 +196,33 @@ small, .small {
 /* FORMS
 /************************************************************************/
 ::-webkit-input-placeholder {
-  color: #cccccc;
+  color: #999999;
 }
 
 :-moz-placeholder {
-  color: #cccccc;
+  color: #999999;
 }
 
 ::-moz-placeholder {
-  color: #cccccc;
+  color: #999999;
 }
 
 :-ms-input-placeholder {
-  color: #cccccc;
+  color: #999999;
 }
 
 label, legend {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 1.2;
 }
 
 input, textarea, select {
   background: white;
   border: 1px solid #999999;
-  color: #141414;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+  color: #333333;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 1.8rem;
   line-height: 1.2;
   display: inline-block;
   width: 100%;
@@ -285,7 +285,7 @@ input[type="submit"]:visited {
   border: 0 !important;
   border-radius: 0;
   color: #cccccc;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   height: 4rem;
   padding: 1rem 1.5rem;
   -webkit-appearance: none;
@@ -293,7 +293,7 @@ input[type="submit"]:visited {
 }
 
 .message {
-  border: 2px solid #141414;
+  border: 2px solid #333333;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -340,12 +340,12 @@ input[type="submit"]:visited {
 .btn-alt {
   background: #cccccc;
   border-color: #cccccc;
-  color: #141414;
+  color: #333333;
 }
 .btn-alt:visited {
   background: #cccccc;
   border-color: #cccccc;
-  color: #141414;
+  color: #333333;
 }
 
 .btn-alt:hover {
@@ -362,12 +362,12 @@ input[type="submit"]:visited {
 .btn-outline {
   background: none;
   border-color: #999999;
-  color: #141414;
+  color: #333333;
 }
 .btn-outline:visited {
   background: none;
   border-color: #999999;
-  color: #141414;
+  color: #333333;
 }
 
 .btn-outline:hover {
