@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25704",
 "files": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/404.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -731,6 +737,71 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/_source\/scss\/_elements\/_buttons.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_source\/scss\/_elements\/_footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_source\/scss\/_elements\/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_forms.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_source\/scss\/_elements\/_header.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/_source\/scss\/_elements\/_typography.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_typography.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/_source\/scss\/_grid\/_classes\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -955,6 +1026,15 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/assets\/js\/scripts.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/scripts-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/comments.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -984,6 +1064,15 @@
 		"oA": 2,
 		"oAP": "\/functions.php",
 		"oF": 0
+		},
+	"\/gulpfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/assets\/js\/gulpfile-min.js",
+		"oF": 1,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/header.php": {
 		"ft": 8192,
