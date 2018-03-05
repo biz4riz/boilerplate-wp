@@ -4,16 +4,21 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 
 	<section role="main">
-		<div class="wrap">
-			<article>
-				<header>
-					<h1><?php the_title(); ?></h1>
-				</header>
-					
-				<?php the_content(); ?>
-				
-			</article>
-		</div>
+		
+		<header id="hero">
+			<div class="wrap">
+				<h1><?php the_title(); ?></h1>
+			</div>
+		</header>
+		
+		<section>
+			<div class="wrap">
+				<article>
+					<?php the_content(); ?>
+				</article>
+			</div>
+		</section>
+		
 	</section>
 
 	<?php endwhile; ?>

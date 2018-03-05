@@ -1,14 +1,10 @@
 <?php get_header(); ?>
 
-	<div class="wrap">
-
-		<section class="content" role="main">
-			
-			<h2>Oops, page not found :(</h2>
+	<section class="content" role="main">
+		<div class="wrap">
+			<h1>Oops, page not found :(</h1>
 			<a href="<?php bloginfo('url'); ?>" class="btn">Back to homepage</a>
-		
-		</section>
-	
-	</div>
+		</div>
+	</section>
 
 <?php get_footer(); ?>

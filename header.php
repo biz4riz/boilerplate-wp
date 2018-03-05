@@ -22,9 +22,8 @@ $slug = $post->post_name;
 	
 	<header role="banner">
 		<div class="wrap">
-			<div class="sm_12">
-				<?php the_custom_logo(); ?>
-				<nav id="main_menu" role="navigation">
+			<?php the_custom_logo(); ?>
+			<nav id="main_menu" role="navigation">
 				<?php 
 					wp_nav_menu(
 						array(
@@ -33,7 +32,6 @@ $slug = $post->post_name;
 						)
 					);
 				?>
-				</nav>
-			</div>
+			</nav>
 		</div>
 	</header>

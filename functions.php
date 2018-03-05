@@ -58,19 +58,13 @@ function theme_setup(){
 
 // Add Stylesheets
 function theme_styles() {
-	wp_enqueue_style( 'layout', get_stylesheet_directory_uri().'/assets/css/layout.css' );
-	wp_enqueue_style( 'styles', get_stylesheet_directory_uri().'/assets/css/styles.css' );
+	wp_enqueue_style( 'layout', get_stylesheet_directory_uri() . '/assets/css/layout.css' );
+	wp_enqueue_style( 'styles', get_stylesheet_directory_uri() . '/assets/css/styles.css' );
 }
 
-// Add typekit
-function theme_typekit(){
-	wp_enqueue_script( 'theme_typekit', '//use.typekit.net/TYPEKIT_PROJECT_ID.js' );
-}
-
-function theme_typekit_const(){
-	if( wp_script_is( 'theme_typekit', 'done' ) ):
-		echo '<script>try{Typekit.load({ async: true });}catch(e){}</script>';
-	endif;
+function theme_scripts() {
+	wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', 3.1.1, true );
+	wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/assets/js/scripts-min.js', array ( 'jquery' ), 1.3, true );
 }
 
 /************************************************************************/
@@ -105,18 +99,18 @@ function remove_gen_version() {
 }
 
 // Add preload tag to web font scripts and styles
-function add_script_attributes($tag, $handle) {
-	if ( 'theme_typekit' !== $handle && 'fontawesome' !== $handle ){
-		return $tag;
-	}
-	return str_replace( ' src', ' preload src', $tag );
-}
-
 function add_style_attributes($html, $handle) {
 	if ( 'layout' !== $handle && 'styles' !== $handle ){
 		return $html;
 	}
 	return str_replace( ' href', ' preload href', $html );
+}
+
+function add_script_attributes($tag, $handle) {
+	if ( 'fontawesome' !== $handle ){
+		return $tag;
+	}
+	return str_replace( ' src', ' preload src', $tag );
 }
 
 /************************************************************************/
@@ -151,11 +145,9 @@ add_filter( 'emoji_svg_url', '__return_false' );
 
 add_action( 'after_setup_theme', 'theme_setup' );
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
-add_action( 'wp_enqueue_scripts', 'theme_typekit' );
-add_action( 'wp_head', 'theme_typekit_const' );
 add_filter( 'tiny_mce_before_init', 'color_options' );
 add_filter( 'style_loader_src', 'remove_cssjs_ver', 10, 2 );
-//add_filter( 'script_loader_tag', 'add_script_attributes', 10, 2 );
-add_filter( 'style_loader_tag', 'add_style_attributes', 10, 2 );
 add_filter( 'the_generator', 'remove_gen_version' );
+add_filter( 'style_loader_tag', 'add_style_attributes', 10, 2 );
+add_filter( 'script_loader_tag', 'add_script_attributes', 10, 2 );
 
