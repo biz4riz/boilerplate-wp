@@ -66,7 +66,6 @@ function theme_styles() {
 add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
 function theme_scripts() {
-	//wp_deregister_script( 'jquery' );
 	wp_register_script( 'jquery-3.1.1', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', false, NULL, true );
 	wp_enqueue_script( 'jquery-3.1.1' );
 	
