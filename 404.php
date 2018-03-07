@@ -1,3 +1,9 @@
+<?php
+/**
+ * 404
+ * @link https://developer.wordpress.org/themes/basics/template-files/
+ */
+?>
 <?php get_header(); ?>
 
 	<section class="content" role="main">

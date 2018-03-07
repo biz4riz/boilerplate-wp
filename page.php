@@ -1,3 +1,9 @@
+<?php
+/**
+ * default for pages
+ * @link https://developer.wordpress.org/themes/basics/template-files/
+ */
+?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ): ?>

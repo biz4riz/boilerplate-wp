@@ -1,5 +1,11 @@
+<?php
+/**
+ * Theme header
+ * @link https://developer.wordpress.org/themes/basics/template-files/
+ */
+?>
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
