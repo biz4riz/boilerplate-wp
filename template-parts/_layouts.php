@@ -4,15 +4,9 @@
 		
 			$layout = get_row_layout();
 			
-			switch($layout):									
-									
-				case 'LAYOUT_NAME':
-					
-					get_template_part( 'template-parts/layout', 'LAYOUT_NAME' );
-					
-					break;
-														
-			endswitch;
+			// make sure layout is named the same in the ACF flexible content field.
+			get_template_part( 'template-parts/layout', $layout );
+
 		endwhile;
 	endif;
 ?>
