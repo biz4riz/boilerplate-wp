@@ -148,15 +148,20 @@ if( function_exists('acf_add_options_page') ) {
 /* ADD BROWSER SPECIFIC BODY CLASSES
 /************************************************************************/
 
-function custom_body_classes($classes){
-    // the list of WordPress global browser checks
-    // https://codex.wordpress.org/Global_Variables#Browser_Detection_Booleans
-    $browsers = ['is_iphone', 'is_chrome', 'is_safari', 'is_NS4', 'is_opera', 'is_macIE', 'is_winIE', 'is_gecko', 'is_lynx', 'is_IE', 'is_edge'];
-    // check the globals to see if the browser is in there and return a string with the match
-    $classes[] = join(' ', array_filter($browsers, function ($browser) {
-        return $GLOBALS[$browser];
-    }));
-    return $classes;
+// Append broswer specifc classes to the body class as well as the page slug
+// @param array $classes 
+function custom_body_classes( $classes ){
+	global $post;
+	$slug = $post->post_name;
+	$classes[] .= $slug;
+	// the list of WordPress global browser checks
+	// @link https://codex.wordpress.org/Global_Variables#Browser_Detection_Booleans
+	$browsers = ['is_iphone', 'is_chrome', 'is_safari', 'is_NS4', 'is_opera', 'is_macIE', 'is_winIE', 'is_gecko', 'is_lynx', 'is_IE', 'is_edge'];
+	// check the globals to see if the browser is in there and return a string with the match
+	$classes[] .= join(' ', array_filter($browsers, function ($browser) {
+		return $GLOBALS[$browser];
+	}));
+	return $classes;
 }
 // call the filter for the body class
 add_filter('body_class', 'custom_body_classes');
