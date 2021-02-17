@@ -1,5 +1,11 @@
+<?php
+/**
+ * Theme header
+ * @link https://developer.wordpress.org/themes/basics/template-files/
+ */
+?>
 <!doctype html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 <head>
 
 <meta charset="<?php bloginfo( 'charset' ); ?>">
@@ -18,13 +24,12 @@ $slug = $post->post_name;
 ?>
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div <?php echo $slug == 'home' ? '' : 'id="'.$slug.'"'; ?> class="container">
 	
 	<header role="banner">
 		<div class="wrap">
-			<div class="sm_12">
-				<?php the_custom_logo(); ?>
-				<nav id="main_menu" role="navigation">
+			<?php the_custom_logo(); ?>
+			<nav id="main_menu" role="navigation">
 				<?php 
 					wp_nav_menu(
 						array(
@@ -33,7 +38,6 @@ $slug = $post->post_name;
 						)
 					);
 				?>
-				</nav>
-			</div>
+			</nav>
 		</div>
 	</header>
